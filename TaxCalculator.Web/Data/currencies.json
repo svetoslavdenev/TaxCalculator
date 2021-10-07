@@ -1,0 +1,17 @@
+[
+  {
+    "CountryId": 1,
+    "Country": "Imaginaria",
+    "ISOCode": "IDR"
+  },
+  {
+    "CountryId": 2,
+    "Country": "Imagistan",
+    "ISOCode": "IMD"
+  },
+  {
+    "CountryId": 3,
+    "Country": "Imaginary Islands",
+    "ISOCode": "IID"
+  }
+]

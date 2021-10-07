@@ -1,0 +1,39 @@
+﻿
+@inject ICountryListProvider CountriList
+<form>
+    <div class="row">
+        <div class="col-6">
+            <label for="gross">Enter gross salary:</label>
+            <input class="form-control" id="gross" type="number" />
+        </div>
+        <div class="col-6">
+            <label for="country">Choose you country</label>
+            <select id="country" class="form-control" asp-items="CountriList.Countries"></select>
+        </div>
+    </div>
+    <div class="m-2">
+        <button type="button" onclick="fetchSalary()" class="btn btn-primary">Calculate</button>
+    </div>
+</form>
+
+<div id="error_wrapper" class="table-bordered invisible" >
+    <span id="error_text" class="text-danger"></span>
+</div>
+
+<div id="response_wrapper" class="invisible">
+    <div >
+        <div class="col-6">
+            <label for="gross_result">Gross</label>
+            <input class="form-control" readonly id="gross_result" />
+            <hr />
+        </div>
+        <div class="col-6">
+            <label for="net_result">Net</label>
+            <input class="form-control" readonly id="net_result" />
+            <hr />
+        </div>
+    </div>
+
+    <div  id="taxes"></div>
+</div>
+
